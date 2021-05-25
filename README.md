@@ -1,6 +1,6 @@
 ![alt text](logo.png)
 ---------------------------------------------------------------------------------------------------
-`wirescreen-api` is a custom client written to interact with the API which supports
+`wirescreen-client` is a custom client written to interact with the API which supports
  https://wirescreen.ai.
  
  The below document shows to use Python version of this client.
