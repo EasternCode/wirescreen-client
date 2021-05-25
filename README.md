@@ -8,8 +8,6 @@
 ## Initializing the client
 The client token can be declared as a variable and passed directly to the client.
 ```python
-from python.client import WireScreenAPI
-
 host = "https://sample.host"
 token = "sample_token_value"
 client = WireScreenAPI(host, token)
@@ -17,8 +15,6 @@ client = WireScreenAPI(host, token)
 Or the token can be set as an environment variable.
 ```Python
 import os
-
-from python.client import WireScreenAPI
 
 host = "https://sample.host"
 os.environ["WIRESCREEN_API_TOKEN"] = "sample_token_value"
@@ -29,8 +25,6 @@ client = WireScreenAPI(host)
 Conducts a general search for both organizations and people. Search results are returned in descending order based on a
 similarity ranking relative to the search term provided.
 ```python
-from python.client import WireScreenAPI
-
 host = "https://sample.host"
 token = "sample_token_value"
 
@@ -51,8 +45,6 @@ Available parameters include:
 
 All parameters are optional.
 ```python
-from python.client import WireScreenAPI
-
 host = "https://sample.host"
 token = "sample_token_value"
 
@@ -73,8 +65,6 @@ To retrieve data for a specific organization, we can provide the company's uniqu
  ```python
 from uuid import UUID
 
-from python.client import WireScreenAPI
-
 host = "https://sample.host"
 token = "sample_token_value"
 
@@ -93,8 +83,6 @@ To retrieve data for a specific person, we can provide the person's unique ident
  retrieve data on multiple persons.
  ```python
 from uuid import UUID
-
-from python.client import WireScreenAPI
 
 host = "https://sample.host"
 token = "sample_token_value"
