@@ -1,8 +1,8 @@
 ![alt text](logo.png)
 ---------------------------------------------------------------------------------------------------
-`wirescreen-client` is a custom client written to interact with the Wirescreen API which supports 
+`wirescreen-client` is a custom client written to interact with the Wirescreen API. 
  
- The below document shows how to use Python version of this client.
+This document shows how to use Python version of the client.
 
 ## Initializing the client
 The client token can be declared as a variable and passed directly to the client.
@@ -60,7 +60,8 @@ client.advanced_search("ZTE", limit_to_public=True, region="Guangdong")
 ## Organization Data
 To retrieve data for a specific organization, we can provide the company's unique identifier to the client's
 `get_organization` method. Have multiple companies you wish to see? Use the `get_organizations` method to
- retrieve data on multiple organizations.
+ retrieve data on multiple organizations. Unique identifiers can be found in the search and advanced search
+ endpoint response.
  ```python
 from uuid import UUID
 
@@ -79,7 +80,8 @@ client.get_organizations(organization_uuids)
 ## Person Data
 To retrieve data for a specific person, we can provide the person's unique identifier to the client's
 `get_person` method. Have multiple persons you wish to see? Use the `get_persons` method to
- retrieve data on multiple persons.
+ retrieve data on multiple persons. Unique identifiers can be found in the search and advanced search
+ endpoint response.
  ```python
 from uuid import UUID
 

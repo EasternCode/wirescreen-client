@@ -62,7 +62,7 @@ class WireScreenAPI:
         limit_to_operating: Optional[bool] = None,
         region: Optional[str] = None,
     ) -> Dict[str, Any]:
-        """Advanced search for companies and people."""
+        """Advanced search for companies."""
         request_data = {
             "query": query,
             "num_results": num_results,
