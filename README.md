@@ -3,7 +3,7 @@
 `wirescreen-client` is a custom client written to interact with the API which supports
  https://wirescreen.ai.
  
- The below document shows to use Python version of this client.
+ The below document shows how to use Python version of this client.
 
 ## Initializing the client
 The client token can be declared as a variable and passed directly to the client.
