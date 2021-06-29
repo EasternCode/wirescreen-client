@@ -7,7 +7,7 @@ This document shows how to use Python version of the client.
 ## Initializing the client
 The client token can be declared as a variable and passed directly to the client.
 ```python
-host = "https://sample.host"
+host = "https://rest.sample.host"
 token = "sample_token_value"
 client = WireScreenAPI(host, token)
 ```
@@ -15,7 +15,7 @@ Or the token can be set as an environment variable.
 ```Python
 import os
 
-host = "https://sample.host"
+host = "https://rest.sample.host"
 os.environ["WIRESCREEN_API_TOKEN"] = "sample_token_value"
 client = WireScreenAPI(host)
 ```
@@ -24,7 +24,7 @@ client = WireScreenAPI(host)
 Conducts a general search for both organizations and people. Search results are returned in descending order based on a
 similarity ranking relative to the search term provided.
 ```python
-host = "https://sample.host"
+host = "https://rest.sample.host"
 token = "sample_token_value"
 
 client = WireScreenAPI(host, token)
@@ -44,7 +44,7 @@ Available parameters include:
 
 All parameters are optional.
 ```python
-host = "https://sample.host"
+host = "https://rest.sample.host"
 token = "sample_token_value"
 
 client = WireScreenAPI(host, token)
@@ -65,7 +65,7 @@ To retrieve data for a specific organization, we can provide the company's uniqu
  ```python
 from uuid import UUID
 
-host = "https://sample.host"
+host = "https://rest.sample.host"
 token = "sample_token_value"
 
 client = WireScreenAPI(host, token)
@@ -85,7 +85,7 @@ To retrieve data for a specific person, we can provide the person's unique ident
  ```python
 from uuid import UUID
 
-host = "https://sample.host"
+host = "https://rest.sample.host"
 token = "sample_token_value"
 
 client = WireScreenAPI(host, token)
@@ -103,9 +103,9 @@ of available endpoints below. They can be queried using any method, as long as p
 
 | Endpoint Name   |                          Path                         |      Method       |
 | --------------- |:-----------------------------------------------------:| -----------------:|
-| Search          |                    /rest/search/search                |        GET        |
-| Advanced Search |                    /rest/search/advancedsearch        |        POST       |
-| Organization    |                    /rest/data/organization            |        GET        |
-| Organizations   |                    /rest/data/organizations           |        POST       |
-| Person          |                    /rest/data/person                  |        GET        |
-| Persons         |                    /rest/data/persons                 |        POST       |
+| Search          |                    /search/search                     |        GET        |
+| Advanced Search |                    /search/advancedsearch             |        POST       |
+| Organization    |                    /data/organization                 |        GET        |
+| Organizations   |                    /data/organizations                |        POST       |
+| Person          |                    /data/person                       |        GET        |
+| Persons         |                    /data/persons                      |        POST       |

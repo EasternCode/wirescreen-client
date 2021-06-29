@@ -8,15 +8,14 @@ import requests
 import validators
 
 
-REST = "rest"
 SEARCH = "search"
 DATA = "data"
-SEARCH_PATH = "/".join([REST, SEARCH, "search"])
-ADVANCED_SEARCH_PATH = "/".join([REST, SEARCH, "advancedsearch"])
-ORGANIZATION_PATH = "/".join([REST, DATA, "organization"])
-ORGANIZATIONS_PATH = "/".join([REST, DATA, "organizations"])
-PERSON_PATH = "/".join([REST, DATA, "person"])
-PERSONS_PATH = "/".join([REST, DATA, "persons"])
+SEARCH_PATH = "/".join([SEARCH, "search"])
+ADVANCED_SEARCH_PATH = "/".join([SEARCH, "advancedsearch"])
+ORGANIZATION_PATH = "/".join([DATA, "organization"])
+ORGANIZATIONS_PATH = "/".join([DATA, "organizations"])
+PERSON_PATH = "/".join([DATA, "person"])
+PERSONS_PATH = "/".join([DATA, "persons"])
 
 
 def _make_headers(token: str) -> Dict[str, str]:
